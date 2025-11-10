@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InestaEdu - Transform Your Learning Journey | Premium Online Education Platform</title>
+    <meta name="description" content="Discover InestaEdu's innovative online learning platform. Access premium courses, expert instructors, and cutting-edge educational technology to accelerate your career growth.">
+    <meta name="keywords" content="online education, learning platform, courses, skills development, career growth">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="InestaEdu - Transform Your Learning Journey">
+    <meta property="og:description" content="Premium online education platform with expert instructors and cutting-edge technology">
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/education,learning">
+    <meta property="og:url" content="https://inestaedu.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="InestaEdu - Transform Your Learning Journey">
+    <meta name="twitter:description" content="Premium online education platform with expert instructors and cutting-edge technology">
+    <meta name="twitter:image" content="https://source.unsplash.com/1200x630/education,learning">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Heroicons -->
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js" type="module"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary: #8f00ff;
+            --secondary: #0f00ff;
+            --accent: #ff00f0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .bg-primary { background-color: var(--primary); }
+        .bg-secondary { background-color: var(--secondary); }
+        .bg-accent { background-color: var(--accent); }
+        .text-primary { color: var(--primary); }
+        .text-secondary { color: var(--secondary); }
+        .text-accent { color: var(--accent); }
+        .border-primary { border-color: var(--primary); }
+        .border-secondary { border-color: var(--secondary); }
+        .border-accent { border-color: var(--accent); }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out forwards;
+        }
+        
+        .animate-counter {
+            animation: counter 2s ease-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(143, 0, 255, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(143, 0, 255, 0.3);
+        }
+        
+        .btn-accent {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 0, 240, 0.3);
+        }
+        
+        .loading {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .loaded {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s ease;
+        }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "InestaEdu",
+        "description": "Premium online education platform with expert instructors and cutting-edge technology",
+        "url": "https://inestaedu.com",
+        "logo": "https://source.unsplash.com/200x200/education,logo",
+        "sameAs": [
+            "https://facebook.com/inestaedu",
+            "https://twitter.com/inestaedu",
+            "https://linkedin.com/company/inestaedu"
+        ]
+    }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">InestaEdu</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#features" class="text-gray-700 hover:text-primary transition-colors">Features</a>
+                        <a href="#pricing" class="text-gray-700 hover:text-primary transition-colors">Pricing</a>
+                        <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+                        <a href="#faq" class="text-gray-700 hover:text-primary transition-colors">FAQ</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-primary transition-colors">Sign In</button>
+                    <button data-project-link class="btn-primary text-white px-6 py-2 rounded-lg font-medium">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 hero-gradient opacity-90"></div>
+        <div class="absolute inset-0">
+            <img src="https://source.unsplash.com/1920x1080/education,students,learning" alt="Students learning" class="w-full h-full object-cover mix-blend-overlay" loading="lazy">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Transform Your
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300">Learning Journey</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Unlock your potential with InestaEdu's premium online courses, expert instructors, and cutting-edge learning technology designed for the modern learner.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button data-project-link class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg">
+                        Start Learning Today
+                    </button>
+                    <button class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg border border-white/30 hover:bg-white/30 transition-all">
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="loading">
+                    <div class="text-4xl font-bold text-primary counter" data-target="50000">0</div>
+                    <div class="text-gray-600 mt-2">Active Students</div>
+                </div>
+                <div class="loading">
+                    <div class="text-4xl font-bold text-secondary counter" data-target="1200">0</div>
+                    <div class="text-gray-600 mt-2">Expert Courses</div>
+                </div>
+                <div class="loading">
+                    <div class="text-4xl font-bold text-accent counter" data-target="98">0</div>
+                    <div class="text-gray-600 mt-2">Success Rate %</div>
+                </div>
+                <div class="loading">
+                    <div class="text-4xl font-bold text-primary counter" data-target="24">0</div>
+                    <div class="text-gray-600 mt-2">Countries Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose InestaEdu?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the future of online learning with our innovative platform designed to accelerate your success.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100 loading">
+                    <div class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            
